@@ -1,0 +1,195 @@
+/* Reset dan style umum */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('background1.jpg');
+}
+
+/* Header */
+header {
+  background-color: #F28AA8;
+  color: #fff;
+  padding: 0.2px;
+  text-align: center;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 100px; /* supaya konten tidak ketiban header */
+}
+
+/* Header container flex */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* kiri & kanan */
+  align-items: center;            /* rata tengah vertikal */
+  flex-wrap: wrap;                /* biar tetap rapi di layar kecil */
+  padding: 10px 20px;
+}
+
+/* Teks kiri */
+.header-left {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+}
+
+.header-logo {
+  width: 60px;   /* sesuaikan ukuran */
+  height: auto;
+}
+
+.header-text h1 {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.header-text h2 {
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+}
+
+/* Jam & tanggal kanan */
+.header-right {
+  text-align: right;
+}
+
+/* Responsif di HP */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;   /* biar turun ke bawah kalau layar kecil */
+    align-items: center;
+  }
+  .header-left{
+     flex-direction: column; /* logo di atas teks */
+    align-items: center;
+  }
+  .header-text {
+    text-align: center;
+  }
+  
+  .header-right {
+    text-align: center;
+    margin: 5px 0;
+  }
+}
+
+/* Nav */
+/* NAV jadi sidebar vertikal */
+nav {
+  width: 220px;             /* lebar sidebar */
+  min-height: 100vh;        /* penuh layar */
+  background: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;   /* susun ke bawah */
+  align-items: center;
+  padding: 80px 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* Link menu */
+.nav-menu {
+  margin-top: 60px;   /* atur seberapa jauh mau turun */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.nav-menu a.menu {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu a.menu:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Bagian Contact dorong ke bawah */
+.nav-contact {
+  margin-top: auto;   /* otomatis paling bawah */
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Supaya konten tidak ketiban sidebar */
+main, section {
+  margin-left: 240px; /* kasih ruang sesuai lebar nav */
+  padding: 20px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #000;
+  color: white;
+  margin-top: auto;
+}
+
+/* Gambar responsif */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tombol umum */
+.btn, .btn-1 {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  background: #F28AA8;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover, .btn-1:hover {
+  background: #d46b88;
+}
+
+/* Responsif dasar */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #444;
+  }
+}

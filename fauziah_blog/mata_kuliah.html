@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fauziah's Blog - Mata Kuliah</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="mata_kuliah.css">
+</head>
+<body>
+<main>
+   <header>
+  <div class="header-container">
+    <!-- Bagian kiri -->
+    <div class="header-left">
+         <img src="assets/logoweb.png" alt="Logo" class="header-logo">
+    <div class="header-text">
+      <h2>Welcome to Fauziah’s Blog</h2>
+      <h1>Gracias Por Visitar Este Blog</h1>
+    </div>
+    </div>
+
+    <!-- Bagian kanan -->
+    <div class="header-right" id="time-date-container">
+      <div id="time"></div>
+      <div id="date"></div>
+    </div>
+  </div>
+</header>
+      
+<nav>
+  <!-- Menu navigasi -->
+   <div class="nav-menu">
+  <a class="menu" href="index.html">Beranda</a>
+  <a class="menu" href="profil.html">Profil</a>
+  <a class="menu" href="mata_kuliah.html">Mata Kuliah</a>
+  <a class="menu" href="picture.html">Picture</a>
+</div>
+  <!-- Contact di bawah -->
+  <div class="nav-contact">
+    <h1 class="special-title2">Contact</h1>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/uzzii_fz/profilecard/?igsh=MWprMTFtamluOTZ0bg==" target="_blank">
+        <img src="assets/logoig.png" alt="Instagram" class="social-icon">
+      </a>
+      <a href="https://x.com/UzziiFz?t=amvs0Zx3wYzkPEwwtImmag&s=09" target="_blank">
+        <img src="assets/logox.png" alt="Twitter" class="social-icon">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section id="mata_kuliah" class="subject-container">
+    <h1 class="special-title">Mata Kuliah</h1>
+    <div class="container">
+        <h2 class="special-title1">Materi MATEMATIKA DASAR</h2>
+        <p>Klik tombol di bawah untuk melihat file PPT:</p>
+        <button class="btn-1" onclick="openPpt('files/mtk1.pdf')">Lihat PPT 1</button>
+        <button class="btn-1" onclick="openPpt('files/mtk2.pdf')">Lihat PPT 2</button>
+       
+        <h2>Materi PENGANTAR SISTEM DAN TEKNOLOGI INFORMASI</h2>
+        <p>Klik tombol di bawah untuk melihat file PPT:</p>
+        <button class="btn-1" onclick="openPpt('files/psti1.pdf')">Lihat PPT 1</button>
+        <button class="btn-1" onclick="openPpt('files/psti2.pdf')">Lihat PPT 2</button>
+
+        <h2>Materi FISIKA ELEKTRONIKA</h2>
+        <p>Klik tombol di bawah untuk melihat file PPT:</p>
+        <button class="btn-1" onclick="openPpt('files/fe.pdf')">Lihat PPT 1</button>
+        
+        <h2>Materi DASAR-DASAR PEMROGRAMAN</h2>
+        <p>Klik tombol di bawah untuk melihat file PPT:</p>
+        <button class="btn-1" onclick="openPpt('files/ddp1.pdf')">Lihat PPT 1</button>
+        <button class="btn-1" onclick="openPpt('files/ddp2.pdf')">Lihat PPT 2</button>
+
+        <h2>Materi PENDIDIKAN KEWARGANEGARAAN</h2>
+        <p>Klik tombol di bawah untuk melihat file PPT:</p>
+        <button class="btn-1" onclick="openPpt('files/pkn.pdf')">Lihat PPT 1</button>
+
+        <h2>Materi WAWASAN SOSIAL BUDAYA DAN IPTEKS</h2>
+        <p>Klik tombol di bawah untuk melihat file PPT:</p>
+        <button class="btn-1" onclick="openPpt('files/wsb.pdf')">Lihat PPT 1</button>
+
+        <h2>Materi AGAMA ISLAM</h2>
+        <p>Klik tombol di bawah untuk melihat file PPT:</p>
+        <button class="btn-1" onclick="openPpt('files/as.pdf')">Lihat PPT 1</button>
+
+        <h2>Materi ARSITEKTUR DAN OPERASI KOMPUTER</h2>
+        <p>Klik tombol di bawah untuk melihat file PPT:</p>
+        <button class="btn-1" onclick="openPpt('files/aok.pdf')">Lihat PPT 1</button>
+        </main-1>
+
+    <div id="ppt" class="ppt">
+        <div class="ppt-content">
+            <span class="close-button" onclick="closePpt()">&times;</span>
+            <iframe id="ppt-iframe" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+</section>
+</main>
+<footer>
+    <p class="p1">&copy; 2024 Blog Sederhana. All Rights Reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

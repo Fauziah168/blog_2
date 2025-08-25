@@ -1,0 +1,87 @@
+body {
+  background: url('../assets/background1.jpg') center/cover no-repeat;
+}
+
+/* Kontainer beranda */
+.profile-container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
+  background-color: #ffb6c1;
+   /* ukuran */
+  width: 60%;          /* lebar 80% dari parent */
+  max-width: 800px;   /* batas maksimal lebar */
+  height: 350px;        /* tinggi menyesuaikan isi */
+
+  /* posisi */
+  margin: 25px 150px;   /* auto = elemen ditengah secara horizontal */
+
+  /* tampilan */
+  padding: 20px;       /* ruang dalam kotak */
+  border-radius: 15px; /* sudut agak bundar */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* bayangan lembut */
+
+  position: relative;   /* penting untuk absolute */
+  overflow: visible; 
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  position: absolute;   /* keluarkan dari layout flex */
+  right: -140px;          /* atur jarak kanan */
+  top: -50px;           /* geser ke atas supaya keluar */
+}
+
+.image-content img {
+  width: 300px;         /* atur ukuran */
+  height: auto;
+}
+/* Grid gambar beranda */
+/* Grid utama */
+.grid-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #333;
+
+  /* Atur ukuran */
+  width: 90%;          /* lebar relatif terhadap layar */
+  max-width: 500px;   /* lebar maksimum */
+  min-height: 500px;   /* tinggi minimum */
+  margin: 20px auto;   /* biar ada jarak dan posisi di tengah */
+  border-radius: 15px; /* biar sudutnya melengkung */
+  margin: 20px 450px;
+}
+
+.gallery-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* otomatis menyesuaikan layar */
+  gap: 20px;
+  width: 100%;
+  max-width: 400px; /* biar tidak terlalu melebar */
+  height: 600px;
+}
+
+/* Card tiap gambar */
+.grid-item {
+  background: #333;            /* background card */
+  border-radius: 15px;         /* sudut melengkung */
+  overflow: hidden;            /* supaya gambar tidak keluar card */
+  box-shadow: 0 5px 12px rgba(0,0,0,0.3); /* shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Gambar di dalam card */
+.grid-item img {
+  width: 90%;
+  height: 350px;         /* tinggi seragam */
+  object-fit: cover;     /* crop biar rapi */
+  display: block;
+}

@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('background1.jpg');
+  background-size: cover; /* Mengatur foto agar menutupi seluruh area */
+  background-repeat: repeat; /* Menghindari pengulangan gambar */
+  background-position: center; /* Memposisikan gambar di tengah */
+  position: relative; /* Dibutuhkan untuk memposisikan elemen absolut */
+}
+
+/* ===== Header ===== */
+header {
+  background-color: #F28AA8;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.header-container h1 {
+  font-size: 24px;
+}
+
+.header-container h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+#time-date-container {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* ===== Navigasi ===== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #333;
+  padding: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text h1 {
+  color: #fff;
+  font-size: 20px;
+}
+
+.blog-text {
+  font-size: 14px;
+}
+
+nav a.menu {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a.menu:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* ===== Konten ===== */
+main, section {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Gambar otomatis menyesuaikan */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tombol */
+.btn, .btn-1 {
+  display: inline-block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  background: #F28AA8;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover, .btn-1:hover {
+  background: #d46b88;
+}
+
+/* Galeri */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.gallery img {
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  overflow-x: auto;
+  display: block;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #000;
+  color: white;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* ===== Responsif ===== */
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 18px;
+  }
+  .header-container h2 {
+    font-size: 14px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav a.menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #444;
+  }
+
+  .logo-container {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .profil-container, .profile-container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn, .btn-1 {
+    width: 100%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}

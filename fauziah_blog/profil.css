@@ -1,0 +1,21 @@
+body {
+  background: url('../assets/background1.jpg') center/cover no-repeat;
+}
+
+/* Konten profil */
+.profil-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.profil-foto {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.nama {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
